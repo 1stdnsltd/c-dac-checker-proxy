@@ -8,7 +8,7 @@
 #include<arpa/inet.h>
 #include<pthread.h> //for threading , link with lpthread
 
-#define DAC_HOSTNAME "dac.nominet.org.uk";
+#define DAC_HOSTNAME "dac.nominet.org.uk"
 #define BUFFER_SIZE 1024
 
 void *connection_handler(void *);
@@ -28,8 +28,8 @@ int main(int argc , char *argv[]) {
 	struct sockaddr_in server , client, nominet_server;
 	char *message, server_reply[1000];
 	int i;
-int optval;
-   socklen_t optlen = sizeof(optval);
+	int optval;
+	socklen_t optlen = sizeof(optval);
 
 	nominet_socket_desc = socket(AF_INET , SOCK_STREAM, 0);
 	if (nominet_socket_desc == -1 ){

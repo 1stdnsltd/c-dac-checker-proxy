@@ -8,7 +8,7 @@ Compiling
 
 **IMPORTANT**
 
-	ensure that you link pthread
+Ensure that you link pthread
 	
 Compiling 
 
